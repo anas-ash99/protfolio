@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { ExternalLink, Github, Gitlab } from 'lucide-react';
 
 const PortfolioTeaser = () => {
@@ -48,12 +49,12 @@ const PortfolioTeaser = () => {
                 ))}
             </div>
             <div className="text-center">
-                <a
-                    href="/all-projects"
+                <Link
+                    to="/all-projects"
                     className="inline-block border border-teal-400 text-teal-400 px-8 py-4 rounded hover:bg-teal-400/10 transition-colors font-mono text-sm"
                 >
                     {t('portfolio.viewAll')}
-                </a>
+                </Link>
             </div>
         </section>
     );
