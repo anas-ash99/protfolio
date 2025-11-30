@@ -18,7 +18,7 @@
     "about": {
         "title": "About Me",
         "description": "I am a motivated Computer Science student with hands-on experience in software development, cloud computing, and mobile app design. With over four years of personal and professional project experience in Kotlin, Go, and Java, I combine academic learning with practical skills. I am eager to contribute as a working student in a dynamic team, applying my skills to real-world challenges while continuing to grow as a software engineer.",
-        "downloadResume": "Download Resume",
+        "downloadResume": "View Resume",
         "languagesTitle": "Languages",
         "languages": "Arabic (Native), English (Fluent), German (Advanced), Hebrew (Intermediate)"
     },
@@ -31,6 +31,10 @@
         "commu": {
             "title": "Commu (Messaging App)",
             "description": "A modern messaging app built with Go and WebSocket for real-time communication."
+        },
+        "tidoco": {
+            "title": "Tidoco",
+            "description": "Coming soon... My biggest and newest project yet! A thrilling showcase of clean architecture and modern engineering excellence."
         },
         "astra": {
             "title": "Astra AI",
