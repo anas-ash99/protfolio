@@ -5,8 +5,8 @@ const Experience = () => {
     const { t } = useTranslation();
 
     const experiences = [
-        { key: 'easy_software', type: 'work' },
-        { key: 'hit', type: 'education' },
+        { key: 'easy_software', type: 'work', link: 'https://www.linkedin.com/company/easy-software' },
+        { key: 'hit', type: 'education', link: 'https://www.hit.ac.il/' },
     ];
 
     return (
@@ -23,9 +23,20 @@ const Experience = () => {
                         <h3 className="flex items-center mb-1 text-lg font-semibold text-slate-200">
                             {exp.type === 'work' ? t(`experience.${exp.key}.role`) : t(`experience.${exp.key}.degree`)}
                             <span className="hidden sm:inline-block mx-2 text-teal-400">@</span>
-                            <span className="text-teal-400 block sm:inline">
-                                {exp.type === 'work' ? t(`experience.${exp.key}.company`) : t(`experience.${exp.key}.school`)}
-                            </span>
+                            {exp.link ? (
+                                <a
+                                    href={exp.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-teal-400 block sm:inline hover:underline"
+                                >
+                                    {exp.type === 'work' ? t(`experience.${exp.key}.company`) : t(`experience.${exp.key}.school`)}
+                                </a>
+                            ) : (
+                                <span className="text-teal-400 block sm:inline">
+                                    {exp.type === 'work' ? t(`experience.${exp.key}.company`) : t(`experience.${exp.key}.school`)}
+                                </span>
+                            )}
                         </h3>
                         <time className="block mb-2 text-sm font-normal leading-none text-slate-400 font-mono">
                             {t(`experience.${exp.key}.period`)}
