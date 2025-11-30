@@ -10,8 +10,10 @@
     },
     "hero": {
         "greeting": "Hi, I'm",
+        "name": "Anas Ashraf.",
         "role": "Computer Science Student & Software Developer",
-        "tagline": "Building cloud-native applications and mobile experiences."
+        "tagline": "Building cloud-native applications and mobile experiences.",
+        "cta": "Check out my work!"
     },
     "about": {
         "title": "About Me",
