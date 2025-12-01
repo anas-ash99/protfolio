@@ -65,6 +65,7 @@
         "message": "Nachricht",
         "send": "Nachricht senden",
         "success": "Nachricht erfolgreich gesendet!",
+        "error": "Beim Senden des Formulars ist ein Problem aufgetreten",
         "info": {
             "phone": "0546064916",
             "email": "ash.anas099@gmail.com",

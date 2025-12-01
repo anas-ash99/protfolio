@@ -65,6 +65,7 @@
         "message": "Message",
         "send": "Send Message",
         "success": "Message sent successfully!",
+        "error": "There was a problem submitting your form",
         "info": {
             "phone": "0546064916",
             "email": "ash.anas099@gmail.com",
